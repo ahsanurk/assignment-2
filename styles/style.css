@@ -1,10 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
-@import url('https://fonts.cdnfonts.com/css/miama')
+@import url('https://fonts.cdnfonts.com/css/miama');
 
-@font-face {
+/* @font-face {
     font-family: myFirstFont;
     src: url('../miama/Miama.ttf')  format('truetype');
-  }
+  } */
 
 *{
     margin: 0;
@@ -203,10 +203,62 @@ body{
     color: rgba(239, 237, 232, 0.65);
 }
 
+/* Change your habit section styles */
+.habit-section-container{
+    max-width: 1044px;
+    margin: 100px auto;
+}
 
-/* Small device styles  */
+.habit-title{
+    font-size: 3rem;
+    font-weight: 900;
+    text-align: center;
+}
+.habit-description{
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 14px;
+    margin-bottom: 58px;
+}
+
+.habit-cards{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 50px;
+}
+
+.habit-card{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.habit-card img{
+    border-radius: 50%;
+
+}
+
+.habit-card h6{
+    font-size: 1.1rem;
+    font-weight: 600;
+    text-align: center;
+    margin: 30px 0px 6px;
+}
+
+.habit-card p{
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+    text-align: center;
+}
+
+
+/* Media query for small device styles  */
 @media screen and (max-width: 576px) {
-
+    /* Nav and banner section media styles */
     .nav-bar-options{
         display: none;
     }
@@ -247,5 +299,12 @@ body{
         left: -20px;
         top: 230px
     }
+
+    /* Change your habit section media styles */
+    .habit-cards{
+        grid-template-columns: repeat(1, 1fr);
+    }
+
+
 
 }
