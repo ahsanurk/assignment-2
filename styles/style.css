@@ -1,5 +1,58 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+}
+
+body{
+    margin: 0 auto;
+    max-width: 1440px;
+    /* height: 500px; */
+    /* background: linear-gradient(180.00deg, rgb(17, 17, 17),rgba(119, 119, 119, 0) 100%); */
+    background-color: rgb(0, 0, 0);
+    color: white;
+    font-family: "Inter", sans-serif;
+}
+
+/* Nav bar styles start here */
+.nav-bar{
+    margin: 57px 190px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.brand-name h2{
+    color: rgb(230, 83, 60);
+    font-size: 2.25em;
+    font-weight: 800;
+}
+
+.nav-bar-options{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 3em;
+
+}
+
+.nav-bar-options p{
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: 400;
+    text-align: left;
+    cursor: pointer;
+}
+
+.nav-bar-options button{
+    background: rgb(230, 83, 60);
+    border-radius: 2.8em;
+    padding: 0.5em 1.1em;
+    color: rgb(255, 255, 255);
+    font-size: 1.2em;
+    font-weight: 400;
+    cursor: pointer;
+
 }
