@@ -93,7 +93,10 @@ body{
     /* font-family: 'Miama', cursive; */
     /* font-family: myFirstFont; */
     /* font-size: 5rem; */
-    font-weight: 400;
+    /* font-family: 'Cursive', serif; */
+    font-style: italic;
+    font-weight: 200;
+    line-height: 150%;
 }
 
 .banner-description-content p{
@@ -549,7 +552,7 @@ footer{
         display: flex;
     }
     .btn-1, .btn-2{
-        padding: 16px 20px;
+        padding: 10px 10px;
     }
     .banner-image-content{
         margin: 48px 20px 30px 20px;
@@ -581,7 +584,7 @@ footer{
     }
     .btn-1{
         margin-bottom: 40px;
-        width: 200px;
+        max-width: 200px;
     }
 
     /*BMI Calculator section media styles  */
