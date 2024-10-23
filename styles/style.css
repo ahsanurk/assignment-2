@@ -548,6 +548,9 @@ footer{
     .btn-0{
         display: flex;
     }
+    .btn-1, .btn-2{
+        padding: 16px 20px;
+    }
     .banner-image-content{
         margin: 48px 20px 30px 20px;
     }
