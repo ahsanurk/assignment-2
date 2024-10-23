@@ -71,12 +71,10 @@ body{
 
 /* banner section styles start here  */
 .hero-banner-container{
-    /* margin: 36px 190px 0px; */
     padding-top: 36px;
     max-width: 1060px;
     margin: 0 auto;
     display: flex;
-    /* position: relative; */
 }
 
 .banner-description-content{
@@ -147,8 +145,8 @@ body{
     backdrop-filter: blur(20px);
     background: rgba(255, 255, 255, 0.1);
     position: absolute;
-    left: 240px;
-    top: 120px;
+    left: 150px;
+    top: 40px;
 }
 
 .section-500 h2{
@@ -173,8 +171,8 @@ body{
     position: absolute;
     width: 206px;
     height: 96px;
-    left: -100px;
-    top: 410px;
+    left: -150px;
+    top: 230px;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -209,7 +207,8 @@ body{
     margin: 100px auto;
 }
 
-.habit-title{
+.habit-title,
+.run-an-extra-mile-title{
     font-size: 3rem;
     font-weight: 900;
     text-align: center;
@@ -255,6 +254,48 @@ body{
     text-align: center;
 }
 
+/* Run an Extra Mile Easily section styles start here */
+
+.run-an-extra-mile-container{
+    max-width: 1060px;
+    height: 370px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    border-radius: 20px;
+    background: rgb(34, 34, 34);
+    align-items: center;
+    padding: 30px;
+
+}
+
+.run-an-extra-mile-content{
+    max-width: 440px;
+    padding-top: 50px;
+}
+.run-an-extra-mile-img{
+    max-width: 366px;
+    /* height: 312px; */
+}
+.run-an-extra-mile-img img{
+    width: 100%;
+    height: auto;
+    border-radius: 18px;
+}
+.align-left{
+    text-align: left;
+}
+
+.run-an-extra-mile-description{
+    font-size: 0.9rem;
+    font-weight: 400;
+    color: rgba(255, 255, 255, 0.5);
+    margin-top: 14px;
+
+}
+.top-margin{
+    margin-top: 34px;
+}
 
 /* Media query for small device styles  */
 @media screen and (max-width: 576px) {
@@ -303,6 +344,16 @@ body{
     /* Change your habit section media styles */
     .habit-cards{
         grid-template-columns: repeat(1, 1fr);
+    }
+    /* Run an extra mile section media styles */
+    .run-an-extra-mile-container{
+        flex-direction: column;
+        height: auto;
+        margin: 0px 20px;
+    }
+    .btn-1{
+        margin-bottom: 40px;
+        width: 200px;
     }
 
 
