@@ -358,7 +358,85 @@ body{
     color: rgba(255, 255, 255, 0.5);
 }
 
-/* Media query for small device styles  */
+/* Footer section styles start here */
+footer{
+    background: rgba(255, 255, 255, 0.1);
+}
+.footer-container{
+    max-width: 1060px;
+    padding: 66px 0 79px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-text-content{
+    max-width: 443px;
+    height: auto;
+}
+.footer-text-content > p{
+    width: 100%;
+    margin-top: 12px;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 0.9rem;
+    font-weight: 400;
+}
+
+.brand{
+    color: rgb(230, 83, 60);
+    font-size: 4.4rem;
+    font-weight: 800;
+}
+
+.footer-nav-container{
+    max-width: 570px;
+    height: auto;
+}
+.footer-nav-content{
+    display: flex;
+    column-gap: 150px;
+}
+
+.nav-item h3{
+    font-size: 1.5rem;
+    font-weight: 700;
+}
+.nav-item li{
+    list-style: none;
+    margin-top: 20px;
+}
+
+.nav-item li a{
+    text-decoration: none;
+    color: rgba(255, 255, 255, 0.5);
+    font-size: 1rem;
+    font-size: 400;
+
+}
+
+.hr-line{
+    max-width: 1060px;
+    margin: 0 auto;
+}
+
+.hr-line hr{
+    border: 2px solid rgba(255, 255, 255, 0.1);
+}
+
+.hr-line > p{
+    padding: 35px 0;
+    text-align: center;
+    font-size: 1rem;
+    font-size: 400;
+    color: rgba(255, 255, 255, 0.5);
+}
+
+
+
+
+
+
+/* @@@@@@@@@@@@@@@@@Media query for small device styles  */
 @media screen and (max-width: 576px) {
     /* Nav and banner section media styles */
     .nav-bar-options{
@@ -422,5 +500,26 @@ body{
         /* height: auto; */
         margin: 0px 20px;
     }
+
+    /* Footer section media styles start here */
+
+    .footer-container, .footer-nav-content{
+        flex-direction: column;
+        margin: 0px 20px;
+    }
+
+    .nav-item > h3{
+        margin-top: 20px;
+    }
+
+    .hr-line, .footer-text-content > p, .brand, hr{
+        margin: 0px 20px;
+    }
+
+    .hr-line > p{
+        margin: 0px 20px;
+        text-align: left;
+    }
+
 
 }
